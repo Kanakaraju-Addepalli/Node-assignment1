@@ -1,0 +1,28 @@
+GET http://localhost:3000/users
+
+###
+DELETE http://localhost:3000/users/4/
+
+###
+GET http://localhost:3000/users/2/
+
+###
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+    
+    "name": "Nithish",
+    "email": "nithish@gmail.com",
+    "phone": "9586325732"
+}
+
+###
+PUT http://localhost:3000/users/6/
+Content-Type: application/json
+
+{
+    "name": "Jack",
+    "email": "jack@gmail.com",
+    "phone": "9560000432"
+}
